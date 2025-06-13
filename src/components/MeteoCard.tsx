@@ -22,6 +22,10 @@ export default async function MeteoCard({ city }: { city: string }) {
 			href={`/city/${city}`}
 			className="bg-blue-200 border-2 p-2 rounded-2xl text-cyan-800 w-1/2 flex border-white"
 		>
+			<p>
+				On tape sur l'URL : {process.env.URL_API} , car on est en{" "}
+				{process.env.NODE_ENV}
+			</p>
 			<img
 				src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
 				alt="icon"
